@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html>
+<!-- /views/rock.erb -->
+ <!DOCTYPE html>
+ <html> 
+
   <head>
     <title>Sinatra RPS</title>
     <meta charset="utf-8">
@@ -13,10 +15,13 @@
     <div><a href="/rock">Play Rock</a></div>
     <div><a href="/paper">Play Paper</a></div>
     <div><a href="/scissors">Play Scissors</a></div>
- 
-</div>
 
-    <%= yield %>
+<body>
+
+  <h2><%= simple_format(@outcome) %></h2>
+  
+
+</body>
 
 <div class="navbar">
 
@@ -24,5 +29,4 @@
  
 </div>
 
-  </body>
-</html>
+<html> 
